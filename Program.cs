@@ -357,8 +357,7 @@ class Program
             {
                 temperature10Years[i] = random.Next(-50, 50);
             }
-            try
-            {
+           
                 int finish = 2022;
                 int start = 2013;
                 int startYear = Input("Введите номер года (2013 - 2022) (с какого года вы хотите посмотреть температуру воздуха) StartYear = ");
@@ -500,15 +499,7 @@ class Program
                 Console.WriteLine("-----------------------------------------------------------------------");
                 Console.WriteLine($" Cредняя температура в зимний период составляла {sumWinterTemperature / countWinter} ");
                 Console.WriteLine($"Минимальная температура составляла {minTempWinter}, а максимальная {maxTempWinter}");
-            }
-            finally
-            {
-                Console.WriteLine("Ошибка ввода!");
-            }
-
-
-
-
+        
 
         }
 
